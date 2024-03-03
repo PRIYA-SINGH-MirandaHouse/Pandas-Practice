@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-def createDataframe(Student_Data: List[List[int]]):
+def createDataframe(Student_Data: List[List[int]]) -> pd.DataFrame:
     column_names = ["student_id","age"]
     result_DataFrame = pd.DataFrame(Student_Data,columns = column_names)
     return result_DataFrame
